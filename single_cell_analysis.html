@@ -11871,28 +11871,6 @@ Ratio LED/VCSEL realistic power: 143x (vs. eye-safety ceiling) / 6430x (vs. expe
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5bf227a7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>¿Por qué "Coverage experimental" da 0% siempre?</strong> Uso la potencia real de un VCSEL (5 mW, <code>[VCSEL-70Gbps]</code>), no el techo teórico, y es demasiado baja: el SNR de pico ya está en -22.5 dB, muy lejos de los 20 dB que hacen falta. Duplicar N solo suma ~3 dB, así que con N=64 llego a -4.5 dB, todavía insuficiente. Haría falta N~10.000 para salir del 0%, fuera del rango que pruebo aquí. No es un fallo del código, es el resultado real a esta escala.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3398f6e6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>With N=32 VCSELs (7.2 W total) coverage already matches the 32.2 W LED, and by N=64 it clearly overtakes it. Thanks to the wide FoV (60 deg), coverage keeps climbing towards the full room area as N grows, unlike the LED, which saturates at its FoV-disk geometry. Peak rate keeps growing too, since it only depends on the brightest point of the beam, not on how much area is covered, so it never hits a ceiling the way coverage does.</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c83075ec">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
