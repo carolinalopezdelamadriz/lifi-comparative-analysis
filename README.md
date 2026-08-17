@@ -6,8 +6,8 @@ Simulation-based comparative study of two Light Fidelity (LiFi) technologies for
 
 Two independent, self-contained Jupyter notebooks:
 
-- **[`single_cell_analysis_v5.ipynb`](single_cell_analysis_v5.ipynb)** — compares the LED and VCSEL channel models under a single access point. First at equal transmit power, to isolate the channel model itself, then under each technology's own realistic power constraint (illuminance for the LED, eye safety for the VCSEL), and finally looks at what tiling multiple VCSEL beams within one cell can and can't fix.
-- **[`multi_cell_analysis_v2.ipynb`](multi_cell_analysis_v2.ipynb)** — extends the comparison to a multi-access-point deployment: coverage across a range of services, equal-infrastructure and cross-equivalence comparisons, scalability/densification, and inter-cell cooperation.
+- **[`single_cell_analysis.ipynb`](single_cell_analysis.ipynb)** — compares the LED and VCSEL channel models under a single access point. First at equal transmit power, to isolate the channel model itself, then under each technology's own realistic power constraint (illuminance for the LED, eye safety for the VCSEL), and finally looks at what tiling multiple VCSEL beams within one cell can and can't fix.
+- **[`multi_cell_analysis.ipynb`](multi_cell_analysis.ipynb)** — extends the comparison to a multi-access-point deployment: coverage across a range of services, equal-infrastructure and cross-equivalence comparisons, scalability/densification, and inter-cell cooperation.
 
 The two notebooks share the same scenario, channel models, and key parameters (beam waist, eye-safe power, coverage threshold, beam count), so results carry over directly from one to the other. Every non-trivial parameter is grounded in a cited standard or reference paper — see each notebook's own References / Traceability sections, and [`references.md`](references.md), for the exact source and equation.
 
@@ -15,11 +15,11 @@ The two notebooks share the same scenario, channel models, and key parameters (b
 
 ```
 .
-├── single_cell_analysis_v5.ipynb   # single-cell comparison
-├── single_cell_analysis_v5.html    # pre-rendered export, viewable without Jupyter
-├── multi_cell_analysis_v2.ipynb    # multi-cell / network-level comparison
-├── multi_cell_analysis_v2.html     # pre-rendered export, viewable without Jupyter
-└── references.md                   # full citations for every paper/standard used
+├── single_cell_analysis.ipynb   # single-cell comparison
+├── single_cell_analysis.html    # pre-rendered export, viewable without Jupyter
+├── multi_cell_analysis.ipynb    # multi-cell / network-level comparison
+├── multi_cell_analysis.html     # pre-rendered export, viewable without Jupyter
+└── references.md                # full citations for every paper/standard used
 ```
 
 ## Running the notebooks
