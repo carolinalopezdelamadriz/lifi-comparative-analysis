@@ -2,6 +2,14 @@
 
 Simulation-based comparative study of two Light Fidelity (LiFi) technologies for indoor optical wireless communication: conventional LED-based LiFi (LiFi 1.0) and VCSEL-based LiFi using narrow, steerable Gaussian beams (LiFi 2.0). Developed as part of a Bachelor's thesis (TFG).
 
+## Scope
+
+This repository contains the simulation code used for the comparative analysis
+presented in the accompanying Bachelor's thesis.
+
+The repository focuses on the simulation and analysis described in the thesis;
+it does not provide a complete implementation of a LiFi physical-layer system.
+
 ## What's here
 
 Two independent, self-contained Jupyter notebooks:
@@ -19,16 +27,36 @@ The two notebooks share the same scenario, channel models, and key parameters (b
 ├── single_cell_analysis.html    # pre-rendered export, viewable without Jupyter
 ├── multi_cell_analysis.ipynb    # multi-cell / network-level comparison
 ├── multi_cell_analysis.html     # pre-rendered export, viewable without Jupyter
+├── requirements.txt             # pinned dependencies to reproduce the notebooks
 └── references.md                # full citations for every paper/standard used
 ```
 
-## Running the notebooks
+## Reproducibility
 
-Requires Python 3 with `numpy`, `matplotlib`, and `pandas`. Each notebook is fully self-contained — every parameter and helper function is defined inline — so it's enough to open it in Jupyter (or VS Code / JupyterLab) and run all cells top to bottom. If you just want to read the results without running anything, open the `.html` export instead.
+The notebooks are self-contained and can be executed from top to bottom
+without requiring any local project files or external datasets.
+
+To reproduce the analysis:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then open either notebook in Jupyter (or VS Code / JupyterLab) and run all cells top to bottom — every parameter and helper function is defined inline, so no other setup is needed.
+
+If you just want to inspect the results without installing anything, the `.html` files are pre-rendered exports of the notebooks (code, output, and figures included), provided for inspection without requiring a Python/Jupyter environment.
 
 ## References
 
 Both notebooks cite the papers and standards behind every modelling choice (channel models, eye-safety limits, capacity bound, etc.) in their own References / Traceability sections. The full citation list, with links (DOI or arXiv), is in [`references.md`](references.md) — the papers themselves aren't included in this repo, since most are under IEEE copyright.
+
+## Citation
+
+If you use this code or results in academic work, please cite:
+
+> Carolina López De La Madriz, "Comparative Study Between LiFi 1.0 and LiFi 2.0," Bachelor's Thesis, Universidad Carlos III de Madrid, 2026.
+
+Citation metadata for the code itself is also available in [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button uses it automatically).
 
 ## License
 

@@ -3,7 +3,61 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>single_cell_analysis_v5</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>single_cell_analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<style type="text/css">
+/* Make code cells and their output clearly distinct from markdown/text cells.
+   This export is a static light theme (no dark-mode support elsewhere in the
+   page), so these colors are fixed rather than following prefers-color-scheme
+   - otherwise only these boxes would flip to dark colors while the rest of
+   the page stayed white. */
+:root {
+  --nb-code-bg: #eef2f8;
+  --nb-code-border: #4c78a8;
+  --nb-output-bg: #f6f6f6;
+  --nb-output-border: #8a8a8a;
+}
+
+.jp-CodeCell .jp-Cell-inputWrapper .jp-InputArea {
+  background: var(--nb-code-bg) !important;
+  border-left: 4px solid var(--nb-code-border) !important;
+  border-radius: 6px;
+  padding: 6px 8px !important;
+}
+
+/* Pygments sets its own background directly on .highlight, which otherwise
+   paints over the .jp-InputArea background above and leaves only the border
+   visible around a mismatched grey box. */
+.jp-CodeCell .jp-Cell-inputWrapper .jp-InputArea .highlight {
+  background: transparent !important;
+}
+
+/* A legacy classic-notebook stylesheet bundled in this export sets a plain
+   `pre { background-color: #262c36; color: #b5c2d9 }` rule (a dark theme,
+   meant for a dark editor). Nothing else overrides its background, so it
+   paints a dark box under the code/output text regardless of the fixes
+   above, which only target the wrapping divs, not the pre itself. */
+.jp-CodeCell .jp-Cell-inputWrapper .jp-InputArea pre {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+.jp-CodeCell .jp-Cell-outputWrapper {
+  background: var(--nb-output-bg) !important;
+  border-left: 4px solid var(--nb-output-border) !important;
+  border-radius: 6px;
+  padding: 6px 8px !important;
+  margin-top: 6px !important;
+}
+
+.jp-CodeCell .jp-Cell-outputWrapper pre {
+  background: transparent !important;
+}
+
+.jp-InputPrompt,
+.jp-OutputPrompt {
+  font-weight: 600 !important;
+}
+</style>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }

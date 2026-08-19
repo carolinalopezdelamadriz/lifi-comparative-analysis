@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "LiFi Comparative Analysis: LiFi 1.0 (LED) vs LiFi 2.0 (VCSEL)"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "López De La Madriz"
+    given-names: "Carolina"
+repository-code: "https://github.com/carolinalopezdelamadriz/lifi-comparative-analysis"
+license: MIT
+version: 1.0.0
+date-released: "2026-08-19"
+keywords:
+  - LiFi
+  - VLC
+  - optical wireless communication
+  - VCSEL
+  - indoor wireless networks
+preferred-citation:
+  type: thesis
+  title: "Comparative Study Between LiFi 1.0 and LiFi 2.0"
+  authors:
+    - family-names: "López De La Madriz"
+      given-names: "Carolina"
+  institution:
+    name: "Universidad Carlos III de Madrid"
+  year: 2026
