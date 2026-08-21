@@ -10,7 +10,7 @@ presented in the accompanying Bachelor's thesis.
 The repository focuses on the simulation and analysis described in the thesis;
 it does not provide a complete implementation of a LiFi physical-layer system.
 
-## What's here
+## Content
 
 Two independent, self-contained Jupyter notebooks:
 
